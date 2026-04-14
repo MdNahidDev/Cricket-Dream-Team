@@ -1,0 +1,134 @@
+[
+  {
+    "playerId": 1,
+    "name": "Virat Kohli",
+    "image": "https://i.postimg.cc/GTm0ZYWW/Sports-1.jpg",
+    "image_alt": "Virat Kohli in the blue Indian jersey blowing a kiss to the crowd",
+    "country": "India",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 95,
+    "price": 1500000
+  },
+  {
+    "playerId": 2,
+    "name": "Ben Stokes",
+    "image": "https://i.postimg.cc/LYTKCvb7/skysports-pa-ben-stokes-england-5805019.jpg",
+    "image_alt": "Ben Stokes celebrating on the field in his white England Test kit",
+    "country": "England",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "rating": 92,
+    "price": 1250000
+  },
+  {
+    "playerId": 3,
+    "name": "Kane Williamson",
+    "image": "https://i.postimg.cc/R6R5sGDY/skysports-kane-williamson-cricket-5996798.jpg",
+    "image_alt": "Kane Williamson smiling during a match in the New Zealand black jersey",
+    "country": "New Zealand",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 90,
+    "price": 1100000
+  },
+  {
+    "playerId": 4,
+    "name": "Rashid Khan",
+    "image": "https://i.postimg.cc/k6c31wph/3a2754d0-e336-11ef-bb6d-d9439f19ed70.jpg",
+    "image_alt": "Rashid Khan in the Afghanistan national team jersey during a match",
+    "country": "Afghanistan",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 94,
+    "price": 1300000
+  },
+  {
+    "playerId": 5,
+    "name": "Babar Azam",
+    "image": "https://i.postimg.cc/YG3Kn8sx/Babar-Azam-1.jpg",
+    "image_alt": "Babar Azam looking forward while wearing the green Pakistan national team kit",
+    "country": "Pakistan",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 91,
+    "price": 1200000
+  },
+  {
+    "playerId": 6,
+    "name": "Steve Smith",
+    "image": "https://i.postimg.cc/Q9bG4Syk/steve-smith-07-03-2022.jpg",
+    "image_alt": "Steve Smith batting for Australia during a Test match",
+    "country": "Australia",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 89,
+    "price": 1050000
+  },
+  {
+    "playerId": 7,
+    "name": "Quinton de Kock",
+    "image": "https://i.postimg.cc/mzwfXV57/Quinton-de-Kock-CPL-14-Sep-2024-1024x591.jpg",
+    "image_alt": "Quinton de Kock in action during a CPL T20 match",
+    "country": "South Africa",
+    "role": "Wicketkeeper-Batsman",
+    "battingStyle": "Left-Hand-Bat",
+    "rating": 88,
+    "price": 950000
+  },
+  {
+    "playerId": 8,
+    "name": "Jasprit Bumrah",
+    "image": "https://i.postimg.cc/N9YvkZpx/jasprit-bumrah-t20-wc-20261-1771078904.jpg",
+    "image_alt": "Jasprit Bumrah celebrating a wicket for India during the T20 World Cup",
+    "country": "India",
+    "role": "Bowler",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 96,
+    "price": 1400000
+  },
+  {
+    "playerId": 9,
+    "name": "Shakib Al Hasan",
+    "image": "https://i.postimg.cc/mzRWyK8Y/Shakib-Al-Hasan-booed-by-Bangladesh-fans-amid-political-unrest.jpg",
+    "image_alt": "Shakib Al Hasan on the field in the Bangladesh green jersey",
+    "country": "Bangladesh",
+    "role": "All-Rounder",
+    "battingStyle": "Left-Hand-Bat",
+    "rating": 90,
+    "price": 1150000
+  },
+  {
+    "playerId": 10,
+    "name": "Mitchell Starc",
+    "image": "https://i.postimg.cc/DJF3PRBQ/mitchell-starc-biography-21-06-2024.jpg",
+    "image_alt": "Close-up of Mitchell Starc in the Australian yellow ODI kit",
+    "country": "Australia",
+    "role": "Bowler",
+    "battingStyle": "Left-Hand-Bat",
+    "rating": 87,
+    "price": 1000000
+  },
+  {
+    "playerId": 11,
+    "name": "Glenn Maxwell",
+    "image": "https://i.postimg.cc/YGkBzTbF/glenn-maxwell-(2).jpg",
+    "image_alt": "Glenn Maxwell reacting during a match in the Australian colors",
+    "country": "Australia",
+    "role": "All-Rounder",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 86,
+    "price": 900000
+  },
+  {
+    "playerId": 12,
+    "name": "Joe Root",
+    "image": "https://i.postimg.cc/ftZQf1BJ/skysports-joe-root-england-6835499.jpg",
+    "image_alt": "Joe Root smiling during an England cricket match",
+    "country": "England",
+    "role": "Batsman",
+    "battingStyle": "Right-Hand-Bat",
+    "rating": 89,
+    "price": 1080000
+  }
+]
