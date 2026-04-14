@@ -2,7 +2,7 @@ import "./App.css";
 import SelectedPlayers from "./Components/SelectedPlayers/SelectedPlayers";
 import AvailablePlayers from "./Components/Available Players/AvailablePlayers";
 import Navbar from "./Components/Navbar/Navbar";
-import { Suspense } from "react";
+import { Suspense, use, useState } from "react";
 
 const fetchPlayers = async () => {
   const res = fetch("/players.json");
@@ -11,6 +11,7 @@ const fetchPlayers = async () => {
 
 function App() {
   const playersPromise = fetchPlayers();
+  const [toggle, setToggle] = useState(true);
 
   return (
     <>
@@ -20,22 +21,30 @@ function App() {
         <h1 className="font-bold text-2xl">Available players</h1>
 
         <div className="font-bold">
-          <button className="py-3 px-4 border border-gray-400 border-r-0 rounded-l-2xl bg-[#E7FE29]">
+          <button
+            onClick={() => setToggle(true)}
+            className="py-3 px-4 border border-gray-400 border-r-0 rounded-l-2xl bg-[#E7FE29]"
+          >
             Available players
           </button>
-          <button className="py-3 px-4 border border-gray-400 border-l-0 rounded-r-2xl">
+          <button
+            onClick={() => setToggle(false)}
+            className="py-3 px-4 border border-gray-400 border-l-0 rounded-r-2xl"
+          >
             Selected <span>0</span>
           </button>
         </div>
       </div>
 
-      <Suspense
-        fallback={<span className="loading loading-ring loading-xl"></span>}
-      >
-        <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
-      </Suspense>
-
-      {/* <SelectedPlayers></SelectedPlayers> */}
+      {toggle === true ? (
+        <Suspense
+          fallback={<span className="loading loading-ring loading-xl"></span>}
+        >
+          <AvailablePlayers playersPromise={playersPromise}></AvailablePlayers>
+        </Suspense>
+      ) : (
+        <SelectedPlayers></SelectedPlayers>
+      )}
     </>
   );
 }
