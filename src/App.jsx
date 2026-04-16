@@ -17,12 +17,22 @@ function App() {
   const [selectedPlayers, setSelectedPlayers] = useState([]);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
 
+  const removePlayer = (p) => {
+    const filteredData = purchasedPlayers.filter((ply) => ply.name !== p.name);
+    setPurchasedPlayers(filteredData);
+    setAvailableBalance(availableBalance + p.price);
+  };
+
   return (
     <>
       <Navbar availableBalance={availableBalance}></Navbar>
 
       <div className="max-w-[1200] w-11/12 mx-auto flex justify-between items-center">
-        <h1 className="font-bold text-2xl">Available players</h1>
+        <h1 className="font-bold text-2xl">
+          {toggle
+            ? "Available"
+            : `Selected Players(${purchasedPlayers.length}/6)`}
+        </h1>
 
         <div className="font-bold">
           <button
@@ -35,7 +45,7 @@ function App() {
             onClick={() => setToggle(false)}
             className={`py-3 px-4 border border-gray-400 border-r-0 rounded-r-2xl ${toggle === false ? "bg-[#E7FE29]" : ""}`}
           >
-            Selected <span>0</span>
+            <span>Selected ({purchasedPlayers.length})</span>
           </button>
         </div>
       </div>
@@ -54,7 +64,10 @@ function App() {
           ></AvailablePlayers>
         </Suspense>
       ) : (
-        <SelectedPlayers purchasedPlayers={purchasedPlayers}></SelectedPlayers>
+        <SelectedPlayers
+          removePlayer={removePlayer}
+          purchasedPlayers={purchasedPlayers}
+        ></SelectedPlayers>
       )}
     </>
   );
