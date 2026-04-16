@@ -28,7 +28,7 @@ const PlayerCard = ({
     <div className="card bg-base-100 shadow-sm p-5">
       <figure>
         <img
-          className="w-full h-[300px] object-cover"
+          className="w-full h-75 object-cover"
           src={player.image}
           alt={player.image_alt}
         />
@@ -40,7 +40,7 @@ const PlayerCard = ({
         </div>
         <div className="flex justify-between mt-4 border-gray-300 border-b-2 pb-2">
           <div className="flex items-center ml-2">
-            <img className="w-[20px] h-[20px]" src={flagImg} alt="" />
+            <img className="w-5 h-5" src={flagImg} alt="" />
             <span className="ml-2">{player.country}</span>
           </div>
           <button className="btn">{player.role}</button>
