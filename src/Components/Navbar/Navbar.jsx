@@ -3,12 +3,17 @@ import coinImg from "../../assets/Images/pngegg.png";
 
 import React from "react";
 
-const Navbar = ({ availableBalance }) => {
+const Navbar = ({ availableBalance, setToggle }) => {
   return (
     <div className="navbar w-11/12 m-w-[1200px] mx-auto">
       <div className="flex-1">
         <a className="text-xl">
-          <img className="w-15 h-15" src={navImg} alt="" />
+          <img
+            onClick={() => setToggle(true)}
+            className="w-15 h-15"
+            src={navImg}
+            alt=""
+          />
         </a>
       </div>
       <div className="flex items-center">
